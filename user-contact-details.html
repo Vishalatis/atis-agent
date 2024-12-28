@@ -1,0 +1,2408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>ATIS | CRM</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="vendors/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="vendors/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!-- NProgress -->
+    <link href="vendors/nprogress/nprogress.css" rel="stylesheet" />
+    <!-- iCheck -->
+    <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet" />
+
+    <!-- bootstrap-progressbar -->
+    <link
+      href="vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css"
+      rel="stylesheet"
+    />
+    <!-- JQVMap -->
+    <link href="vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
+    <!-- bootstrap-daterangepicker -->
+    <link
+      href="vendors/bootstrap-daterangepicker/daterangepicker.css"
+      rel="stylesheet"
+    />
+
+    <!-- Datatables -->
+    <link
+      href="vendors/datatables.net-bs/css/dataTables.bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Theme Style -->
+    <link href="build/css/custom.min.css" rel="stylesheet" />
+
+    <!-- favicon -->
+
+    <link rel="shortcut icon" type="image/png" href="images/logo.png" />
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title text-center" style="border: 0">
+              <a href="index.html" class="site_title">
+                <img src="images/logo.png" alt="logo" style="width: 60px" />
+              </a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img
+                  src="images/img.jpg"
+                  alt="..."
+                  class="img-circle profile_img"
+                />
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2>Suraj Jamdade</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div
+              id="sidebar-menu"
+              class="main_menu_side hidden-print main_menu"
+            >
+              <div class="menu_section">
+                <h3>Help Desk</h3>
+                <ul class="nav side-menu">
+                  <li>
+                    <a href="index.html"
+                      ><i class="fa fa-home"></i> Dashboard
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      ><i class="fa fa-ticket"></i> Tickets
+                      <span class="fa fa-chevron-down"></span
+                    ></a>
+                    <ul class="nav child_menu">
+                      <li><a href="create_ticket.html">Create Ticket</a></li>
+                      <li><a href="inbox.html">Inbox</a></li>
+                      <li><a href="my-tickets.html">My Tickets</a></li>
+                      <li>
+                        <a href="my-Team-tickets.html">My Team Tickets</a>
+                      </li>
+                      <li><a href="unassigned.html">Unassigned</a></li>
+                      <li><a href="overdue.html">Overdue</a></li>
+                      <li><a href="unapproved.html">Unapproved</a></li>
+                      <li>
+                        <a href="my-pending-approval.html"
+                          >My Pending Approval</a
+                        >
+                      </li>
+                      <li><a href="closed-tickets.html">Closed</a></li>
+                      <li><a href="trash-tickets.html">Trash</a></li>
+                      <li><a href="spam-tickets.html">Spam</a></li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a
+                      ><i class="fa fa-money"></i> Accounts
+                      <span class="fa fa-chevron-down"></span
+                    ></a>
+                    <ul class="nav child_menu">
+                      <li>
+                        <a href="create-accounts.html">Create Accounts</a>
+                      </li>
+                      <li>
+                        <a href="all-accounts.html">All Accounts</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a
+                      ><i class="fa fa-cubes"></i> Inventory Management
+                      <span class="fa fa-chevron-down"></span
+                    ></a>
+                    <ul class="nav child_menu">
+                      <li>
+                        <a href="create-inventory.html">Create Inventory</a>
+                      </li>
+                      <li>
+                        <a href="all-inventory.html">All Inventory</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a
+                      ><i class="fa fa-users"></i> Contacts
+                      <span class="fa fa-chevron-down"></span
+                    ></a>
+                    <ul class="nav child_menu">
+                      <li><a href="all-contacts.html">All Contacts</a></li>
+                      <li>
+                        <a href="all-organizations.html">All Organizations</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a
+                      ><i class="fa fa-wrench"></i> Tools
+                      <span class="fa fa-chevron-down"></span
+                    ></a>
+                    <ul class="nav child_menu">
+                      <li>
+                        <a href="cancel-response.html">Cancel Response</a>
+                      </li>
+                      <li>
+                        <a>Category <span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                          <li class="sub_menu">
+                            <a href="add-category.html">Add Category</a>
+                          </li>
+                          <li><a href="all-category.html">All Category</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a>Articles <span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                          <li class="sub_menu">
+                            <a href="add-article.html">Add Article</a>
+                          </li>
+                          <li><a href="all-article.html">All Article</a></li>
+                          <li>
+                            <a href="add-article-template.html"
+                              >Add Article Template</a
+                            >
+                          </li>
+                          <li>
+                            <a href="all-article-template.html"
+                              >All Article Template</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a>Pages <span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                          <li class="sub_menu">
+                            <a href="add-page.html">Add Page</a>
+                          </li>
+                          <li><a href="all-pages.html">All Pages</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="comments.html">Comments</a></li>
+                      <li><a href="settings.html">Settings</a></li>
+                      <li>
+                        <a href="recurring-tickets.html">Recurring Tickets</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a
+                      ><i class="fa fa-file"></i> Reports
+                      <span class="fa fa-chevron-down"></span
+                    ></a>
+                    <ul class="nav child_menu">
+                      <li>
+                        <a href="helpdesk-reports.html">Helpdesk Reports</a>
+                      </li>
+                      <li>
+                        <a href="servicedesk-reports.html"
+                          >ServiceDesk Reports</a
+                        >
+                      </li>
+                      <li>
+                        <a href="reports-schedule.html">Reports Schedule</a>
+                      </li>
+                      <li>
+                        <a href="activity-downloads.html">Activity Downloads</a>
+                      </li>
+                      <li><a href="reports-settings.html">Settings</a></li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a href="admin-panel.html"
+                      ><i class="fa fa-user-plus"></i> Switch To Admin Panel
+                    </a>
+                  </li>
+                  <li>
+                    <a href="login.html"
+                      ><i class="fa fa-sign-in"></i> Sign Out
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu_section">
+                <h3>Service Desk</h3>
+                <ul class="nav side-menu">
+                  <li>
+                    <a
+                      ><i class="fa fa-bug"></i> Problems
+                      <span class="fa fa-chevron-down"></span
+                    ></a>
+                    <ul class="nav child_menu">
+                      <li><a href="new-problem.html">New Problem</a></li>
+                      <li><a href="all-problems.html">All Problems</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      ><i class="fa fa-refresh"></i> Changes
+                      <span class="fa fa-chevron-down"></span
+                    ></a>
+                    <ul class="nav child_menu">
+                      <li><a href="new-changes.html">New Changes</a></li>
+                      <li><a href="all-changes.html">All Changes</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      ><i class="fa fa-television"></i> Releases
+                      <span class="fa fa-chevron-down"></span
+                    ></a>
+                    <ul class="nav child_menu">
+                      <li><a href="new-releases.html">New releases</a></li>
+                      <li><a href="all-releases.html">All releases</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      ><i class="fa fa-slack"></i> Assets
+                      <span class="fa fa-chevron-down"></span
+                    ></a>
+                    <ul class="nav child_menu">
+                      <li><a href="new-assets.html">New Assets</a></li>
+                      <li><a href="all-assets.html">All Assets</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      ><i class="fa fa-paperclip"></i> Contracts
+                      <span class="fa fa-chevron-down"></span
+                    ></a>
+                    <ul class="nav child_menu">
+                      <li><a href="new-contracts.html">Create Contracts</a></li>
+                      <li><a href="all-contracts.html">All Contracts</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span
+                  class="glyphicon glyphicon-fullscreen"
+                  aria-hidden="true"
+                ></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span
+                  class="glyphicon glyphicon-eye-close"
+                  aria-hidden="true"
+                ></span>
+              </a>
+              <a
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Logout"
+                href="login.html"
+              >
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a
+                    href="javascript:;"
+                    class="user-profile dropdown-toggle"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="images/img.jpg" alt="" />Suraj Jamdade
+                    <span class="fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li style="border-bottom: 1px dotted #000">
+                      <a href="profile.html"> Profile</a>
+                    </li>
+
+                    <li>
+                      <a href="login.html"
+                        ><i class="fa fa-sign-out pull-right"></i> Log Out</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                  <a
+                    href="javascript:;"
+                    class="dropdown-toggle info-number"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa fa-bell-o"></i>
+                    <span class="badge bg-green">6</span>
+                  </a>
+                  <ul
+                    id="menu1"
+                    class="dropdown-menu list-unstyled msg_list"
+                    role="menu"
+                  >
+                    <li>
+                      <a>
+                        <span class="image"
+                          ><img src="images/img.jpg" alt="Profile Image"
+                        /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie
+                          makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"
+                          ><img src="images/img.jpg" alt="Profile Image"
+                        /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie
+                          makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"
+                          ><img src="images/img.jpg" alt="Profile Image"
+                        /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie
+                          makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"
+                          ><img src="images/img.jpg" alt="Profile Image"
+                        /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie
+                          makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="text-center">
+                        <a>
+                          <strong>See All Alerts</strong>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                  <a
+                    href="javascript:;"
+                    class="dropdown-toggle info-number"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <ul
+                    id="menu1"
+                    class="dropdown-menu list-unstyled msg_list"
+                    role="menu"
+                  >
+                    <li>
+                      <div class="input-group">
+                        <input
+                          type="search"
+                          class="form-control"
+                          placeholder="Search..."
+                        />
+                        <span class="input-group-btn">
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            style="padding: 5"
+                          >
+                            Search
+                          </button>
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                  <a
+                    href="admin-panel.html"
+                    class="dropdown-toggle info-number"
+                  >
+                    <i class="fa fa-user-plus"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <!-- breadcrumb start -->
+          <div
+            style="
+              border-bottom: 1px dotted #000;
+              padding: 0.2rem;
+              margin-bottom: 10px;
+            "
+          >
+            <div>
+              <h4 style="color: #000; margin-top: 6rem">Profile</h4>
+            </div>
+            <div>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="index.html">Dashboard</a>
+                  </li>
+                  <li class="breadcrumb-item"><a href="#">Profile</a></li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+          <!-- breadcrumb start -->
+
+          <!-- top cards -->
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="x_panel">
+                <div class="x_content">
+                  <div class="text-center">
+                    <img
+                      src="images/img.jpg"
+                      alt="user"
+                      style="width: 100px; height: 100px; border-radius: 50px"
+                    />
+                    <h4>Suraj Jamdade</h4>
+                    <div
+                      style="display: flex; gap: 10px; justify-content: center"
+                    >
+                      <a
+                        href="#"
+                        type="button"
+                        data-toggle="modal"
+                        data-target="#emailModal"
+                        title="User has not verified email address. Click here to verify manually."
+                        data-toggle="tooltip"
+                        data-placement="top"
+                      >
+                        <i
+                          class="fa fa-envelope"
+                          style="font-size: 16px; color: red"
+                        ></i>
+                      </a>
+                      <a
+                        href="#"
+                        title="User has not verified Mobile .click here to verified manually"
+                        data-toggle="modal"
+                        data-target="#phoneModal"
+                      >
+                        <i
+                          class="fa fa-phone-square"
+                          style="font-size: 16px; color: red"
+                        ></i>
+                      </a>
+                      <a
+                        href="#"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="User has not enabled 2FA"
+                      >
+                        <i
+                          class="fa fa-shield"
+                          style="font-size: 16px; color: red"
+                        ></i>
+                      </a>
+                    </div>
+                    <hr />
+                    <div
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                      "
+                    >
+                      <h5 style="color: #000; font-weight: bold">Username</h5>
+                      <div style="display: flex; gap: 10px">
+                        <p
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="suraj jamdade"
+                          style="color: blue"
+                        >
+                          suraj jamdade
+                        </p>
+                        |
+                        <a
+                          href=""
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="copy"
+                        >
+                          <i class="fa fa-copy"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <hr />
+
+                    <div
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                      "
+                    >
+                      <h5 style="color: #000; font-weight: bold">Email</h5>
+                      <div style="display: flex; gap: 10px">
+                        <p
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="suraj jamdade"
+                          style="color: blue"
+                        >
+                          suraj@gmail.com
+                        </p>
+                        |
+                        <a
+                          href=""
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="copy"
+                        >
+                          <i class="fa fa-copy"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <hr />
+
+                    <div
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                      "
+                    >
+                      <h5 style="color: #000; font-weight: bold">Role</h5>
+                      <div style="display: flex; gap: 10px">
+                        <p
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="User"
+                          style="color: blue"
+                        >
+                          User
+                        </p>
+                      </div>
+                    </div>
+                    <hr />
+
+                    <div
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                      "
+                    >
+                      <h5 style="color: #000; font-weight: bold">Work Phone</h5>
+                      <div style="display: flex; gap: 10px">
+                        <p
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="9876543210"
+                          style="color: blue"
+                        >
+                          +91 9876543210
+                        </p>
+                      </div>
+                    </div>
+                    <hr />
+
+                    <div
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                      "
+                    >
+                      <h5 style="color: #000; font-weight: bold">Mobile</h5>
+                      <div style="display: flex; gap: 10px">
+                        <p
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="9876543210"
+                          style="color: blue"
+                        >
+                          +91 9876543210
+                        </p>
+                      </div>
+                    </div>
+                    <hr />
+
+                    <div
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                      "
+                    >
+                      <h5 style="color: #000; font-weight: bold">
+                        Organization
+                      </h5>
+                      <div style="display: flex; gap: 10px">
+                        <a
+                          href="#"
+                          title="Edit"
+                          style="color: blue"
+                          data-toggle="modal"
+                          data-target="#organizationEditModal"
+                        >
+                          <i class="fa fa-edit"></i>
+                        </a>
+                        |
+
+                        <a
+                          href="#"
+                          title="Assign"
+                          style="color: blue"
+                          data-toggle="modal"
+                          data-target="#assignModal"
+                        >
+                          <i class="fa fa-list"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <hr />
+
+                    <div>
+                      <h5 style="color: #000; font-weight: bold">Address</h5>
+                      <div>
+                        <p
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="pune"
+                          style="color: blue"
+                        >
+                          Pune
+                        </p>
+                      </div>
+                    </div>
+                    <hr />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-9 col-sm-6 col-xs-12">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="x_panel">
+                    <div class="x_title">
+                      <ul class="nav navbar-right panel_toolbox">
+                        <li class="dropdown">
+                          <a
+                            href="#"
+                            class="dropdown-toggle"
+                            role="button"
+                            aria-expanded="false"
+                            style="
+                              border: 1px solid #f2f2f2;
+                              color: #000;
+                              padding: 3px 20px;
+                              margin-top: 3px;
+                              background: #f2f2f2;
+                              margin-left: 3px;
+                              font-size: 12px;
+                            "
+                            data-toggle="modal"
+                            data-target="#updatePermissionModal"
+                            title="Attach Assets"
+                          >
+                            <i class="fa fa-book"></i> Update Permissions
+                          </a>
+                        </li>
+                        <li class="dropdown">
+                          <a
+                            href="#"
+                            class="dropdown-toggle"
+                            role="button"
+                            aria-expanded="false"
+                            style="
+                              border: 1px solid #f2f2f2;
+                              color: #000;
+                              padding: 3px 20px;
+                              margin-top: 3px;
+                              background: #f2f2f2;
+                              margin-left: 3px;
+                              font-size: 12px;
+                            "
+                            data-toggle="modal"
+                            data-target="#changeRoleAgentModal"
+                            title="Attach Assets"
+                          >
+                            <i class="fa fa-user"></i> Change Role To Agent
+                          </a>
+                        </li>
+                        <li class="dropdown">
+                          <a
+                            href="#"
+                            class="dropdown-toggle"
+                            role="button"
+                            aria-expanded="false"
+                            style="
+                              border: 1px solid #f2f2f2;
+                              color: #000;
+                              padding: 3px 20px;
+                              margin-top: 3px;
+                              background: #f2f2f2;
+                              margin-left: 3px;
+                              font-size: 12px;
+                            "
+                            data-toggle="modal"
+                            data-target="#changeRoleAdminModal"
+                            title="Attach Assets"
+                          >
+                            <i class="fa fa-user-secret"></i> Change Role To
+                            Admin
+                          </a>
+                        </li>
+
+                        <li class="dropdown">
+                          <a
+                            href="#"
+                            class="dropdown-toggle"
+                            role="button"
+                            aria-expanded="false"
+                            style="
+                              border: 1px solid #f2f2f2;
+                              color: #000;
+                              padding: 3px 20px;
+                              margin-top: 3px;
+                              background: #f2f2f2;
+                              margin-left: 3px;
+                              font-size: 12px;
+                            "
+                            data-toggle="modal"
+                            data-target="#changePasswordModal"
+                            title="Attach Assets"
+                          >
+                            <i class="fa fa-key"></i> Change Password
+                          </a>
+                        </li>
+                        <li class="dropdown">
+                          <a
+                            href="#"
+                            class="dropdown-toggle"
+                            role="button"
+                            aria-expanded="false"
+                            style="
+                              border: 1px solid #f2f2f2;
+                              color: #000;
+                              padding: 3px 20px;
+                              margin-top: 3px;
+                              background: #f2f2f2;
+                              margin-left: 3px;
+                              font-size: 12px;
+                            "
+                            data-toggle="modal"
+                            data-target="#deactivateModal"
+                            title="Attach Assets"
+                          >
+                            <i class="fa fa-trash"></i> Deactivate
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                      <div
+                        class=""
+                        role="tabpanel"
+                        data-example-id="togglable-tabs"
+                      >
+                        <ul
+                          id="myTab"
+                          class="nav nav-tabs bar_tabs"
+                          role="tablist"
+                        >
+                          <li role="presentation" class="active">
+                            <a
+                              href="#tab_content1"
+                              id="Open-tab"
+                              role="tab"
+                              data-toggle="tab"
+                              aria-expanded="true"
+                              >Open &nbsp;
+                              <span class="label label-primary"> 0</span></a
+                            >
+                          </li>
+                          <li role="presentation" class="">
+                            <a
+                              href="#tab_content2"
+                              role="tab"
+                              id="Closed-tab"
+                              data-toggle="tab"
+                              aria-expanded="false"
+                              >Closed &nbsp;
+                              <span class="label label-primary"> 0</span></a
+                            >
+                          </li>
+                          <li role="presentation" class="">
+                            <a
+                              href="#tab_content3"
+                              role="tab"
+                              id="Unapproved-tab2"
+                              data-toggle="tab"
+                              aria-expanded="false"
+                              >Unapproved &nbsp;
+                              <span class="label label-primary"> 0</span></a
+                            >
+                          </li>
+                          <li role="presentation" class="">
+                            <a
+                              href="#tab_content4"
+                              role="tab"
+                              id="delete-tab2"
+                              data-toggle="tab"
+                              aria-expanded="false"
+                              >Deleted &nbsp;
+                              <span class="label label-primary"> 0</span></a
+                            >
+                          </li>
+                        </ul>
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div style="margin-bottom: 50px">
+                              <ul class="nav navbar-right panel_toolbox">
+                                <li class="dropdown">
+                                  <a
+                                    href="#"
+                                    class="dropdown-toggle"
+                                    role="button"
+                                    aria-expanded="false"
+                                    style="
+                                      border: 1px solid #f2f2f2;
+                                      color: #000;
+                                      padding: 3px 20px;
+                                      margin-top: 3px;
+                                      background: #f2f2f2;
+                                      margin-left: 3px;
+                                      font-size: 12px;
+                                    "
+                                    data-toggle="modal"
+                                    data-target="#mergeModal"
+                                    title="Merge Contact"
+                                  >
+                                    <i class="fa fa-share-alt"></i> Merge
+                                  </a>
+                                </li>
+                                <li class="dropdown">
+                                  <a
+                                    href="#"
+                                    class="dropdown-toggle"
+                                    data-toggle="dropdown"
+                                    role="button"
+                                    aria-expanded="false"
+                                    style="
+                                      border: 1px solid #f2f2f2;
+                                      color: #000;
+                                      padding: 3px;
+                                      font-size: 12px;
+                                      padding: 3px 20px;
+                                      margin-top: 3px;
+                                      background: #f2f2f2;
+                                      margin-left: 3px;
+                                    "
+                                  >
+                                    <i class="fa fa-exchange"></i> Change Status
+                                    <i class="fa fa-angle-down"></i
+                                  ></a>
+                                  <ul class="dropdown-menu" role="menu">
+                                    <li style="padding: 10px">
+                                      <a href="">
+                                        <i class="fa fa-clock-o"></i> Open</a
+                                      >
+                                      <a href="">
+                                        <i class="fa fa-close"></i> Closed
+                                      </a>
+                                      <a href="">
+                                        <i class="fa fa-trash"></i> Deleted
+                                      </a>
+                                      <a href="">
+                                        <i class="fa fa-bug"></i> Spam
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-lg-6"></div>
+                        </div>
+                        <div id="myTabContent" class="tab-content">
+                          <div
+                            role="tabpanel"
+                            class="tab-pane fade active in"
+                            id="tab_content1"
+                            aria-labelledby="Open-tab"
+                          >
+                            <div>
+                              <div class="col-lg-8"></div>
+                              <div class="col-lg-4" style="margin-bottom: 10px">
+                                <input
+                                  type="search"
+                                  class="form-control"
+                                  placeholder="Search..."
+                                />
+                              </div>
+                            </div>
+                            <table class="table table-bordered">
+                              <thead>
+                                <tr>
+                                  <th>#</th>
+                                  <th>Ticket Id</th>
+                                  <th>Subject</th>
+                                  <th>Requester</th>
+                                  <th>Assign to</th>
+                                  <th>Last activity</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                  <td>@mdo</td>
+                                  <td>@mdo</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div
+                            role="tabpanel"
+                            class="tab-pane fade"
+                            id="tab_content2"
+                            aria-labelledby="Closed-tab"
+                          >
+                            <div>
+                              <div class="col-lg-8"></div>
+                              <div class="col-lg-4" style="margin-bottom: 10px">
+                                <input
+                                  type="search"
+                                  class="form-control"
+                                  placeholder="Search..."
+                                />
+                              </div>
+                            </div>
+                            <table class="table table-bordered">
+                              <thead>
+                                <tr>
+                                  <th>#</th>
+                                  <th>Ticket Id</th>
+                                  <th>Subject</th>
+                                  <th>Requester</th>
+                                  <th>Assign to</th>
+                                  <th>Last activity</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                  <td>@mdo</td>
+                                  <td>@mdo</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div
+                            role="tabpanel"
+                            class="tab-pane fade"
+                            id="tab_content3"
+                            aria-labelledby="Unapproved-tab"
+                          >
+                            <div>
+                              <div class="col-lg-8"></div>
+                              <div class="col-lg-4" style="margin-bottom: 10px">
+                                <input
+                                  type="search"
+                                  class="form-control"
+                                  placeholder="Search..."
+                                />
+                              </div>
+                            </div>
+                            <table class="table table-bordered">
+                              <thead>
+                                <tr>
+                                  <th>#</th>
+                                  <th>Ticket Id</th>
+                                  <th>Subject</th>
+                                  <th>Requester</th>
+                                  <th>Assign to</th>
+                                  <th>Last activity</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                  <td>@mdo</td>
+                                  <td>@mdo</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div
+                            role="tabpanel"
+                            class="tab-pane fade"
+                            id="tab_content4"
+                            aria-labelledby="delete-tab"
+                          >
+                            <div>
+                              <div class="col-lg-8"></div>
+                              <div class="col-lg-4" style="margin-bottom: 10px">
+                                <input
+                                  type="search"
+                                  class="form-control"
+                                  placeholder="Search..."
+                                />
+                              </div>
+                            </div>
+                            <table class="table table-bordered">
+                              <thead>
+                                <tr>
+                                  <th>#</th>
+                                  <th>Ticket Id</th>
+                                  <th>Subject</th>
+                                  <th>Requester</th>
+                                  <th>Assign to</th>
+                                  <th>Last activity</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                  <td>@mdo</td>
+                                  <td>@mdo</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="x_panel">
+                    <div class="x_title">
+                      <h2>Login Logs</h2>
+                      <ul class="nav navbar-right panel_toolbox">
+                        <li>
+                          <a class="collapse-link"
+                            ><i class="fa fa-chevron-up"></i
+                          ></a>
+                        </li>
+
+                        <li>
+                          <a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                      <div>
+                        <div class="col-lg-8"></div>
+                        <div class="col-lg-4" style="margin-bottom: 10px">
+                          <input
+                            type="search"
+                            class="form-control"
+                            placeholder="Search..."
+                          />
+                        </div>
+                      </div>
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>Device</th>
+                            <th>Platform/OS</th>
+                            <th>Browser</th>
+                            <th>IP</th>
+                            <th>Login at</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="x_panel">
+                    <div class="x_title">
+                      <h2>Packages</h2>
+                      <ul class="nav navbar-right panel_toolbox">
+                        <li>
+                          <a class="collapse-link"
+                            ><i class="fa fa-chevron-up"></i
+                          ></a>
+                        </li>
+
+                        <li>
+                          <a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                      <div
+                        class=""
+                        role="tabpanel"
+                        data-example-id="togglable-tabs"
+                      >
+                        <ul
+                          id="myTab"
+                          class="nav nav-tabs bar_tabs"
+                          role="tablist"
+                        >
+                          <li role="presentation" class="active">
+                            <a
+                              href="#tab_content5"
+                              id="Orders-tab"
+                              role="tab"
+                              data-toggle="tab"
+                              aria-expanded="true"
+                              >Orders &nbsp;
+                              <span class="label label-primary"> 0</span></a
+                            >
+                          </li>
+                          <li role="presentation" class="">
+                            <a
+                              href="#tab_content6"
+                              role="tab"
+                              id="Invoice-tab"
+                              data-toggle="tab"
+                              aria-expanded="false"
+                              >Invoice &nbsp;
+                              <span class="label label-primary"> 0</span></a
+                            >
+                          </li>
+                        </ul>
+
+                        <div id="myTabContent" class="tab-content">
+                          <div
+                            role="tabpanel"
+                            class="tab-pane fade active in"
+                            id="tab_content5"
+                            aria-labelledby="Orders-tab"
+                          >
+                            <div>
+                              <div class="col-lg-8"></div>
+                              <div class="col-lg-4" style="margin-bottom: 10px">
+                                <input
+                                  type="search"
+                                  class="form-control"
+                                  placeholder="Search..."
+                                />
+                              </div>
+                            </div>
+                            <table class="table table-bordered">
+                              <thead>
+                                <tr>
+                                  <th>Package name</th>
+                                  <th>Invoice</th>
+                                  <th>Credit type</th>
+                                  <th>Credit</th>
+                                  <th>Total amount</th>
+                                  <th>Period expiry date</th>
+                                  <th>Expiry date</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                  <td>@mdo</td>
+                                  <td>@mdo</td>
+                                  <td>@mdo</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div
+                            role="tabpanel"
+                            class="tab-pane fade"
+                            id="tab_content6"
+                            aria-labelledby="Invoice-tab"
+                          >
+                            <div>
+                              <div class="col-lg-8"></div>
+                              <div class="col-lg-4" style="margin-bottom: 10px">
+                                <input
+                                  type="search"
+                                  class="form-control"
+                                  placeholder="Search..."
+                                />
+                              </div>
+                            </div>
+                            <table class="table table-bordered">
+                              <thead>
+                                <tr>
+                                  <th>Name</th>
+                                  <th>Created at</th>
+                                  <th>Due by</th>
+                                  <th>Total amount</th>
+                                  <th>Payment mode</th>
+                                  <th>Status</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                  <td>@mdo</td>
+                                  <td>@mdo</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="x_panel">
+                    <div class="x_title">
+                      <h2>SD Associates</h2>
+                      <ul class="nav navbar-right panel_toolbox">
+                        <li>
+                          <a class="collapse-link"
+                            ><i class="fa fa-chevron-up"></i
+                          ></a>
+                        </li>
+
+                        <li>
+                          <a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                      <div
+                        class="tabpanel"
+                        role="tabpanel"
+                        data-example-id="togglable-tabs"
+                      >
+                        <ul
+                          id="myTab"
+                          class="nav nav-tabs bar_tabs"
+                          role="tablist"
+                        >
+                          <li role="presentation" class="active">
+                            <a
+                              href="#tab_content8"
+                              id="Associated-tab"
+                              role="tab"
+                              data-toggle="tab"
+                              aria-expanded="true"
+                              >Associated Assets</a
+                            >
+                          </li>
+                          <li role="presentation">
+                            <a
+                              href="#tab_content9"
+                              id="Contracts-tab"
+                              role="tab"
+                              data-toggle="tab"
+                              aria-expanded="false"
+                              >Associated Contracts</a
+                            >
+                          </li>
+                          <li role="presentation">
+                            <a
+                              href="#tab_content10"
+                              id="Software-tab"
+                              role="tab"
+                              data-toggle="tab"
+                              aria-expanded="false"
+                              >Associated Software License</a
+                            >
+                          </li>
+                        </ul>
+
+                        <div id="myTabContent" class="tab-content">
+                          <!-- Associated Assets Tab -->
+                          <div
+                            role="tabpanel"
+                            class="tab-pane fade active in"
+                            id="tab_content8"
+                            aria-labelledby="Associated-tab"
+                          >
+                            <div class="row">
+                              <div class="col-lg-8"></div>
+                              <div class="col-lg-4" style="margin-bottom: 10px">
+                                <input
+                                  type="search"
+                                  class="form-control"
+                                  placeholder="Search..."
+                                />
+                              </div>
+                            </div>
+                            <table class="table table-bordered">
+                              <thead>
+                                <tr>
+                                  <th>Name</th>
+                                  <th>Managed by</th>
+                                  <th>Used by</th>
+                                  <th>Contract</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>Mark</td>
+                                  <td>@mdo</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+
+                          <!-- Associated Contracts Tab -->
+                          <div
+                            role="tabpanel"
+                            class="tab-pane fade"
+                            id="tab_content9"
+                            aria-labelledby="Contracts-tab"
+                          >
+                            <table class="table table-bordered">
+                              <thead>
+                                <tr>
+                                  <th>Name</th>
+                                  <th>Cost</th>
+                                  <th>Contract Start Date</th>
+                                  <th>Contract End Date</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Contract A</td>
+                                  <td>$5000</td>
+                                  <td>2023-01-01</td>
+                                  <td>2024-01-01</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+
+                          <!-- Associated Software License Tab -->
+                          <div
+                            role="tabpanel"
+                            class="tab-pane fade"
+                            id="tab_content10"
+                            aria-labelledby="Software-tab"
+                          >
+                            <div class="row">
+                              <div class="col-lg-8"></div>
+                              <div class="col-lg-4" style="margin-bottom: 10px">
+                                <input
+                                  type="search"
+                                  class="form-control"
+                                  placeholder="Search..."
+                                />
+                              </div>
+                            </div>
+                            <table class="table table-bordered">
+                              <thead>
+                                <tr>
+                                  <th>Name</th>
+                                  <th>License Key</th>
+                                  <th>Purchase Order Number</th>
+                                  <th>Licensed To Email</th>
+                                  <th>Version</th>
+                                  <th>Purchase Date</th>
+                                  <th>Renewal Date</th>
+                                  <th>Expiration Date</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Software A</td>
+                                  <td>XXXX-XXXX-XXXX</td>
+                                  <td>PO1234</td>
+                                  <td>user@example.com</td>
+                                  <td>v2.3.1</td>
+                                  <td>2023-03-01</td>
+                                  <td>2024-03-01</td>
+                                  <td>2025-03-01</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="x_panel">
+                    <div class="x_title">
+                      <h2>Report of test first test last</h2>
+                      <ul class="nav navbar-right panel_toolbox">
+                        <li>
+                          <a class="collapse-link"
+                            ><i class="fa fa-chevron-up"></i
+                          ></a>
+                        </li>
+
+                        <li>
+                          <a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <label for="">Select Date Range</label>
+                          <div class="control-group">
+                            <div class="controls">
+                              <div class="input-prepend input-group">
+                                <span class="add-on input-group-addon"
+                                  ><i
+                                    class="glyphicon glyphicon-calendar fa fa-calendar"
+                                  ></i
+                                ></span>
+                                <input
+                                  type="text"
+                                  style="width: 100%"
+                                  name="reservation"
+                                  id="reservation"
+                                  class="form-control"
+                                  value="01/01/2024 - 01/25/2024"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-12">
+                          <div class="x_content">
+                            <iframe
+                              class="chartjs-hidden-iframe"
+                              style="
+                                width: 100%;
+                                display: block;
+                                border: 0px;
+                                height: 0px;
+                                margin: 0px;
+                                position: absolute;
+                                inset: 0px;
+                              "
+                            ></iframe>
+                            <canvas
+                              id="mybarChart"
+                              height="355"
+                              width="711"
+                              style="width: 569px; height: 284px"
+                            ></canvas>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /top cards -->
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Copyright © 2024 . All rights reserved. Powered by
+            <a href="">ATIS</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- email modal start -->
+    <div
+      class="modal fade bs-example-modal-lg"
+      id="emailModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Email Verified</h4>
+          </div>
+          <div class="modal-body">
+            <form id="demo-form2" class="needs-validation" novalidate>
+              <div class="row">
+                <div class="col-lg-12 mb-3">
+                  <label for="firstName">Email*:</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id=""
+                    name=""
+                    placeholder=""
+                    required
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              <i class="fa fa-check"></i> Update And Verify
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- email modal end -->
+
+    <!-- Phone modal start -->
+    <div
+      class="modal fade bs-example-modal-lg"
+      id="phoneModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Verify Mobile</h4>
+          </div>
+          <div class="modal-body">
+            <form id="demo-form2" class="needs-validation" novalidate>
+              <div class="row">
+                <div
+                  class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback"
+                >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputSuccess5"
+                    placeholder="Phone"
+                  />
+                  <span
+                    class="fa fa-phone form-control-feedback right"
+                    aria-hidden="true"
+                  ></span>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              <i class="fa fa-check"></i> Update And Verify
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phone modal end -->
+
+    <!-- organization modal start -->
+    <div
+      class="modal fade bs-example-modal-lg"
+      id="organizationEditModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Create Organization</h4>
+          </div>
+          <div class="modal-body">
+            <form id="demo-form2" class="needs-validation" novalidate>
+              <div class="row">
+                <div
+                  class="col-md-12 col-sm-12 col-xs-12"
+                  style="margin-bottom: 20px"
+                >
+                  <label for="">Organisation Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id=""
+                    placeholder=""
+                  />
+                </div>
+                <div
+                  class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback"
+                  style="margin-bottom: 20px"
+                >
+                  <label for="">Phone</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputSuccess5"
+                    placeholder="Phone"
+                  />
+                  <span
+                    class="fa fa-phone form-control-feedback right"
+                    aria-hidden="true"
+                  ></span>
+                </div>
+
+                <div
+                  class="col-md-12 col-sm-12 col-xs-12"
+                  style="margin-bottom: 20px"
+                >
+                  <label for="">Organisation Domain Name </label>
+                  <select name="" id="" class="custom-select">
+                    <option value="">Select</option>
+                    <option value="">Atis</option>
+                    <option value="">Atis</option>
+                  </select>
+                </div>
+
+                <div
+                  class="col-md-12 col-sm-12 col-xs-12"
+                  style="margin-bottom: 20px"
+                >
+                  <label for="">Description</label>
+                  <textarea
+                    name=""
+                    id=""
+                    class="form-control"
+                    placeholder=""
+                  ></textarea>
+                </div>
+                <div
+                  class="col-md-12 col-sm-12 col-xs-12"
+                  style="margin-bottom: 20px"
+                >
+                  <label for="">Address</label>
+                  <textarea
+                    name=""
+                    id=""
+                    class="form-control"
+                    placeholder=""
+                  ></textarea>
+                </div>
+                <div
+                  class="col-md-12 col-sm-12 col-xs-12"
+                  style="margin-bottom: 20px"
+                >
+                  <label for="">Organisation Logo</label>
+                  <input type="file" />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              <i class="fa fa-refresh"></i> Update
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- organization modal end -->
+
+    <!-- assign modal start -->
+    <div
+      class="modal fade bs-example-modal-lg"
+      id="assignModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Assign</h4>
+          </div>
+          <div class="modal-body">
+            <form id="demo-form2" class="needs-validation" novalidate>
+              <div class="row">
+                <div
+                  class="col-md-12 col-sm-12 col-xs-12"
+                  style="margin-bottom: 20px"
+                >
+                  <label for="">Organizations </label>
+                  <select name="" id="" class="custom-select">
+                    <option value="">Select</option>
+                    <option value="">test</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              <i class="fa fa-thumbs-o-up"></i> Assign
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- assign modal end -->
+
+    <!-- Edit modal start -->
+    <div
+      class="modal fade"
+      id="editModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              <!-- Corrected data-dismiss -->
+              <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Edit</h4>
+          </div>
+          <div class="modal-body">
+            <form
+              id="demo-form2"
+              data-parsley-validate
+              class=""
+              novalidate
+              style="display: flex; flex-direction: column; gap: 20px"
+            >
+              <div class="row">
+                <div class="col-lg-6" style="margin-bottom: 20px">
+                  <label for="">First Name *:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter first name"
+                    value="John"
+                  />
+                </div>
+                <div class="col-lg-6" style="margin-bottom: 20px">
+                  <label for="">Last Name *:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter Last name"
+                    value="Doe"
+                  />
+                </div>
+                <div class="col-lg-6" style="margin-bottom: 20px">
+                  <label for="">User Name *:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter User name"
+                    value="jdoe"
+                  />
+                </div>
+                <div class="col-lg-6" style="margin-bottom: 20px">
+                  <label for="">Work Phone *:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter Phone"
+                    value="1234567890"
+                  />
+                </div>
+                <div class="col-lg-6" style="margin-bottom: 20px">
+                  <label for="">Email *:</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter Email"
+                    value="jdoe@gmail.com"
+                  />
+                </div>
+                <div class="col-lg-6" style="margin-bottom: 20px">
+                  <label for="">Mobile Phone *:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter Mobile"
+                    value="1234567890"
+                  />
+                </div>
+                <div class="col-lg-12" style="margin-bottom: 20px">
+                  <label for="">Address *:</label>
+                  <textarea
+                    class="form-control"
+                    placeholder="Enter Address"
+                  ></textarea>
+                </div>
+                <div class="col-lg-12" style="margin-bottom: 20px">
+                  <label for="email">Organisation *:</label>
+                  <select class="custom-select">
+                    <option value="">Select</option>
+                    <option value="">Atis</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              <!-- Corrected data-dismiss -->
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              <i class="fa fa-save"></i> Update
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Edit modal end -->
+
+    <!-- update permission modal start -->
+    <div
+      class="modal fade"
+      id="updatePermissionModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              <!-- Corrected data-dismiss -->
+              <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">User Permissions</h4>
+          </div>
+          <div class="modal-body">
+            <form
+              id="demo-form2"
+              data-parsley-validate
+              class=""
+              novalidate
+              style="display: flex; flex-direction: column; gap: 20px"
+            >
+              <div class="row">
+                <div class="col-lg-6" style="margin-bottom: 20px">
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      id="customCheck1"
+                    />
+                    <label class="custom-control-label" for="customCheck1"
+                      >View Organization Assets
+                      <span class="label label-primary"
+                        ><i class="fa fa-question"></i></span
+                    ></label>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              <!-- Corrected data-dismiss -->
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              <i class="fa fa-refresh"></i> Update
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- update permission modal end -->
+
+    <!-- agents permission modal start -->
+    <div
+      class="modal fade"
+      id="changeRoleAgentModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              <!-- Corrected data-dismiss -->
+              <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+              Role change user to agent
+            </h4>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="row">
+                <div class="col-lg-12" style="margin-bottom: 20px">
+                  <label for="">Departments *</label>
+                  <select name="" id="" class="custom-select">
+                    <option value="">Select</option>
+                    <option value="">Operation</option>
+                    <option value="">Sales</option>
+                    <option value="">Select</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              <!-- Corrected data-dismiss -->
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              <i class="fa fa-refresh"></i> Update
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- agents modal end -->
+
+    <!-- admin permission modal start -->
+    <div
+      class="modal fade"
+      id="changeRoleAdminModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              <!-- Corrected data-dismiss -->
+              <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+              Role change user to admin
+            </h4>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="row">
+                <div class="col-lg-12" style="margin-bottom: 20px">
+                  <label for="">Departments *</label>
+                  <select name="" id="" class="custom-select">
+                    <option value="">Select</option>
+                    <option value="">Operation</option>
+                    <option value="">Sales</option>
+                    <option value="">Select</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              <!-- Corrected data-dismiss -->
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              <i class="fa fa-check"></i> Proceed
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- admin modal end -->
+
+    <!-- change password permission modal start -->
+    <div
+      class="modal fade"
+      id="changePasswordModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              <!-- Corrected data-dismiss -->
+              <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Change Password</h4>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="row">
+                <div
+                  class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback"
+                >
+                  <label for="">New Password *</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="inputSuccess5"
+                    placeholder=""
+                  />
+                  <span
+                    class="fa fa-key form-control-feedback right"
+                    aria-hidden="true"
+                  ></span>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              <!-- Corrected data-dismiss -->
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              <i class="fa fa-check"></i> Proceed
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- change password modal end -->
+
+    <!-- deactivate modal start -->
+    <div
+      class="modal fade"
+      id="deactivateModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              <!-- Corrected data-dismiss -->
+              <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Deactivate</h4>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="row">
+                <div class="col-lg-12" style="margin-bottom: 20px">
+                  <h4>
+                    Select what should happen to tickets requested by test first
+                    test last ?
+                  </h4>
+                </div>
+                <div
+                  class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback"
+                  style="margin-bottom: 20px"
+                >
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="customRadio1"
+                      name="customRadio"
+                      class="custom-control-input"
+                    />
+                    <label class="custom-control-label" for="customRadio1">
+                      Close all open tickets</label
+                    >
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input
+                      type="radio"
+                      id="customRadio2"
+                      name="customRadio"
+                      class="custom-control-input"
+                    />
+                    <label class="custom-control-label" for="customRadio2"
+                      >Change requester
+                    </label>
+                  </div>
+                </div>
+                <div class="col-lg-12" style="margin-bottom: 20px">
+                  <label for="">Change requester </label>
+                  <select name="" id="" class="custom-select">
+                    <option value="">Select</option>
+                    <option value="">test</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              <!-- Corrected data-dismiss -->
+              Close
+            </button>
+            <button type="button" class="btn btn-danger">
+              <i class="fa fa-trash"></i> Deactivate
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- deactivate modal end -->
+
+    <!-- Merge modal start -->
+    <div
+      class="modal fade"
+      id="mergeModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title" id="mergeModalLabel">Merge contacts</h4>
+          </div>
+          <div class="modal-body">
+            <form id="merge-form" data-parsley-validate novalidate>
+              <div class="form-group" style="margin-bottom: 30px">
+                <label for="parent-ticket"
+                  >Pick the parent or retained contact*:</label
+                >
+                <select id="parent-ticket" class="custom-select">
+                  <option value="">Select</option>
+                  <option value="ticket1">test@gmail.com</option>
+                  <option value="ticket2">test@gmail.com</option>
+                </select>
+              </div>
+              <div class="form-group" style="margin-bottom: 30px">
+                <label for="parent-ticket"
+                  >Pick the child or duplicate contacts* :</label
+                >
+                <select id="parent-ticket" class="custom-select">
+                  <option value="">Select</option>
+                  <option value="ticket1">test@gmail.com</option>
+                  <option value="ticket2">test@gmail.com</option>
+                </select>
+              </div>
+              <div class="form-group" style="margin-bottom: 5">
+                <label for="merge-reason">Reason for merging* :</label>
+                <textarea
+                  id="merge-reason"
+                  class="form-control"
+                  rows="3"
+                  placeholder="Enter Reason"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Proceed</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Merge modal end -->
+
+    <!-- Datatables -->
+    <script src="vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+    <script src="vendors/jszip/dist/jszip.min.js"></script>
+    <script src="vendors/pdfmake/build/pdfmake.min.js"></script>
+    <script src="vendors/pdfmake/build/vfs_fonts.js"></script>
+
+    <!-- jQuery -->
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="vendors/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="vendors/Flot/jquery.flot.js"></script>
+    <script src="vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="vendors/Flot/jquery.flot.time.js"></script>
+    <script src="vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="vendors/DateJS/build/date.js"></script>
+    <!-- JQVMap -->
+    <script src="vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="vendors/moment/min/moment.min.js"></script>
+    <script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="build/js/custom.min.js"></script>
+  </body>
+</html>
